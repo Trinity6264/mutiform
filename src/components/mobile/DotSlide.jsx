@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
+import {  useSelector } from 'react-redux'
+import { selectCurrentIndex } from '../../feature/CurrentIndexSlice'
 
 const DotSlide = () => {
-    const [currentIndex, setCurrentIndex] = useState(1)
+    const currentIndex = useSelector(selectCurrentIndex)
     const slideList = [1, 2, 3, 4]
     return (
 

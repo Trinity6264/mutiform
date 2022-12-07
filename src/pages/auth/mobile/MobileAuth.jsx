@@ -6,6 +6,7 @@ import '../../../style/MobileAuthStyle.css'
 import ContentWrapper from './ContentWrapper'
 
 const MobileAuth = () => {
+  
   return (
     <div className='mobile-auth'>
       <BackgroundPic />

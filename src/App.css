@@ -27,7 +27,7 @@ p {
   color: var(--CoolGray);
 }
 h1,
-label {
+label,h2,h3,h4 {
   color: var(--MarineBlue);
 }
 

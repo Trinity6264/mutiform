@@ -1,68 +1,123 @@
-
-.mobile-auth{
-    position: relative;
-    min-height: 100vh;
+.mobile-auth {
+  position: relative;
+  min-height: 100vh;
 }
 
-.overlay-wrapper{
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 2.5rem;
-    z-index: 10;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background-color: rebeccapurple; */
+.overlay-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 2.5rem;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: rebeccapurple; */
 }
 
-.dotSlide{
-    margin-bottom: 2rem;
+.dotSlide {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle-wrapper {
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-left: 0.7rem;
+  border-radius: 50%;
+  border: 1px solid var(--LightGray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--White);
+  font-weight: 500;
+  transition: all 400ms ease-in-out;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: var(--White);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.4rem;
+}
+
+.bottom-nav > p {
+  font-weight: 500;
+  transition: all 300ms ease;
+}
+.bottom-nav > p:hover {
+  cursor: pointer;
+  color: var(--MarineBlue);
+}
+.bottom-nav > button {
+  border-radius: 5px;
+  transition: all 300ms ease;
+}
+.bottom-nav > button:hover {
+  background-color: hsla(213, 96%, 18%, 0.9);
+}
+
+.card {
+  background-color: var(--White);
+  padding: 1.2rem;
+  width: 90%;
+  border: 1px solid var(--White) !important;
+  outline: none;
+  box-shadow: 2px 2px 10px var(--LightGray);
+}
+
+form .group {
+  margin-bottom: 1rem;
+}
+
+.option-card {  
+  padding: 0 1.2rem;
+  border-radius: 10px;
+  margin-bottom: .5rem;
+  display: flex;
+  align-items:  center;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.option-card img {
+  width: 13%;
+}
+.option-card .mini-info {
+  margin-left: 1rem;
+  margin-top: .2rem;
+}
+.option-card .mini-info h4 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.option-card .mini-info p {
+  margin-bottom: .3rem;
+  font-size: .8rem;
+  font-weight: 500;
+}
+.option-card .mini-info .months {
+    color: var(--MarineBlue);
+}
+
+.toggle-wrapper{
+    margin-top: .4rem;
     display: flex;
+    column-gap: .5rem;
     justify-content: center;
-    align-items: center;
-}
-.circle-wrapper{
-    width: 2.2rem;
-    height: 2.2rem;
-    margin-left: .7rem;
-    border-radius: 50%;
-    border: 1px solid var(--LightGray);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--White);
-    font-weight: 500;
-    transition: all 300ms ease;
 }
 
-.bottom-nav{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 5rem;
-    background-color: var(--White);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 1.4rem;
+.toggle-wrapper p{
+    font-weight: 700;
 }
-
-.bottom-nav > button{
-    border-radius: 5px;   
-}
-
-.card{
-    background-color: var(--White);
-    padding:  1.2rem;
-    width: 90%;
-    border: 1px solid var(--White) !important; 
-    outline: none;
-    box-shadow: 2px 2px 10px var(--LightGray);
-}
-
-form .group{
-    margin-bottom: 1rem;
+.toggle-wrapper .month{
+    color: var(--MarineBlue);
+    
 }
