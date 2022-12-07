@@ -5,7 +5,7 @@ import ArcadePic from '../../asset/icon-arcade.svg'
 import AdvancePic from '../../asset/icon-advanced.svg'
 import ProPic from '../../asset/icon-pro.svg'
 import OptionCard from './OptionCard'
-import { ToggleButton } from 'react-bootstrap'
+import { Form } from 'react-bootstrap'
 const StepTwo = () => {
     const [ids, setId] = useState(null);
 
@@ -37,13 +37,20 @@ const StepTwo = () => {
             <h1>Select your plan</h1>
             <p>You have the option of monthly or <br /> yearly billing.</p>
             {
-                listOfPlan.map(({ img, price, title,id }) => {
-                    return <OptionCard onClick={()=> setId(id)} isSelected={id === ids } img={img} price={price} title={title} key={title} />
+                listOfPlan.map(({ img, price, title, id }) => {
+                    return <OptionCard onClick={() => setId(id)} isSelected={id === ids} img={img} price={price} title={title} key={title} />
                 })
             }
             <div className="toggle-wrapper">
                 <p className='month'>Month</p>
-                <ToggleButton active={false} checked={false} />
+                <Form.Check
+                    type="switch"
+                    id="custom-switch"
+                   style={{
+                    color: 'var(--MarineBlue)',
+
+                   }}
+                />
                 <p>Yearly</p>
             </div>
         </section>
