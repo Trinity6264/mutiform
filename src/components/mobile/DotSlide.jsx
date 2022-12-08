@@ -9,7 +9,9 @@ const DotSlide = () => {
 
         <section className='dotSlide'>
             {slideList.map((val) => {
-                return <div className="circle-wrapper"
+                return <div 
+                key={val}
+                className="circle-wrapper"
                     style={{
                         color: (currentIndex === val) ? 'var(--Black)' : 'var(--White)',
                         backgroundColor: (currentIndex === val) ? 'var(--LightBlue)' : null

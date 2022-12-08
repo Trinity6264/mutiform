@@ -78,46 +78,75 @@ form .group {
   margin-bottom: 1rem;
 }
 
-.option-card {  
+.option-card {
   padding: 0 1.2rem;
   border-radius: 10px;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   display: flex;
-  align-items:  center;
+  align-items: center;
   cursor: pointer;
   transition: all 400ms ease;
 }
 .option-card img {
-  width: 13%;
+  width: 8%;
 }
 .option-card .mini-info {
   margin-left: 1rem;
-  margin-top: .2rem;
+  margin-top: 0.2rem;
 }
 .option-card .mini-info h4 {
   font-size: 1rem;
   font-weight: 700;
 }
 .option-card .mini-info p {
-  margin-bottom: .3rem;
-  font-size: .8rem;
+  margin-bottom: 0.3rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 .option-card .mini-info .months {
-    color: var(--MarineBlue);
+  color: var(--MarineBlue);
 }
 
-.toggle-wrapper{
-    margin-top: .4rem;
-    display: flex;
-    column-gap: .5rem;
-    justify-content: center;
+.toggle-wrapper {
+  margin-top: 0.4rem;
+  display: flex;
+  column-gap: 0.5rem;
+  justify-content: center;
 }
 
-.toggle-wrapper p{
-    font-weight: 700;
+.toggle-wrapper p {
+  font-weight: 700;
 }
-.toggle-wrapper .month{
-    color: var(--MarineBlue);
-    
+.toggle-wrapper .month {
+  color: var(--MarineBlue);
+}
+
+.pick-add-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--LightGray);
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: .8rem;
+}
+
+.pick-add-card .add-center-div {
+  margin-left: 0.5rem;
+  margin-right: 4rem;
+  text-align: start;
+}
+
+.pick-add-card h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+.pick-add-card small {
+  color: var(--CoolGray);
+}
+.pick-add-card .yr {
+  color: var(--PurplishBlue);
+  font-weight: 500;
 }

@@ -8,6 +8,11 @@ import OptionCard from './OptionCard'
 import { Form } from 'react-bootstrap'
 const StepTwo = () => {
     const [ids, setId] = useState(null);
+    const [active, setActive] = useState(false);
+
+    const onToggleBtn = (e)=>{
+        setActive(!active)
+    }
 
     const listOfPlan = [
         {
@@ -38,7 +43,9 @@ const StepTwo = () => {
             <p>You have the option of monthly or <br /> yearly billing.</p>
             {
                 listOfPlan.map(({ img, price, title, id }) => {
-                    return <OptionCard onClick={() => setId(id)} isSelected={id === ids} img={img} price={price} title={title} key={title} />
+                    return <OptionCard 
+                    isActive={active}
+                    onClick={() => setId(id)} isSelected={id === ids} img={img} price={price} title={title} key={title} />
                 })
             }
             <div className="toggle-wrapper">
@@ -46,6 +53,8 @@ const StepTwo = () => {
                 <Form.Check
                     type="switch"
                     id="custom-switch"
+                    checked={active}
+                    onChange={onToggleBtn}
                    style={{
                     color: 'var(--MarineBlue)',
 
